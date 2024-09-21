@@ -1,27 +1,77 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
+    font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
+    line-height: 1.6;
+    padding-top: 60px; /* For fixed navbar */
 }
-header {
-    text-align: center;
+
+.hero {
+    padding: 80px 0;
+    background: url('https://via.placeholder.com/1920x600') center/cover no-repeat;
+    color: white;
 }
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 0;
-}
-h2 {
-    color: #333;
-}
-ul {
+
+.skills-section ul {
     list-style-type: none;
     padding: 0;
 }
-li {
-    padding: 10px 0;
+
+.skills-section ul li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #333;
 }
+
+.accordion-button:not(.collapsed) {
+    background-color: #333;
+    color: white;
+}
+
+.accordion-button {
+    color: #333;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+/* Carousel */
+.carousel-item {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+}
+
+/* Contact Section */
+.contact-section input,
+.contact-section textarea {
+    background-color: #555;
+    border: none;
+    color: white;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+    background-color: #666;
+    color: white;
+    outline: none;
+}
+
+.contact-section .btn {
+    background-color: #00b4d8;
+}
+
+.contact-section .btn:hover {
+    background-color: #0077b6;
+}
+
+/* Footer */
 footer {
-    text-align: center;
-    margin-top: 20px;
+    background-color: #222;
+    color: white;
 }
